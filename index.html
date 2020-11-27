@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--indica el tipo de documento-->
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head><!--cabezera-->
+        <title>estrella a delta </title><!--titulo de la pagina web-->
+</head>
+<body>
+
+
+ <script type="text/javascript">
+//funciones para determinar cada resistenacia 
+function Ra(numero1,numero2,numero3)
+ {
+ alert("Ra : "+(numero1*numero2/numero1+numero1*numero3/numero1+numero2*numero3/numero1) );
+ }
+ function Rb(numero1,numero2,numero3)
+ {
+ alert("Rb : "+(numero1*numero2/numero2+numero1*numero3/numero2+numero2*numero3/numero2) );
+ }
+  function Rc(numero1,numero2,numero3)
+ {
+ alert("Rc : "+(numero1*numero2/numero3+numero1*numero3/numero3+numero2*numero3/numero3) );
+ }
+//deeclaramos las variables 
+ var numero1, numero2,numero3;
+ 
+ numero1= parseFloat(prompt("RA:"));
+ numero2= parseFloat(prompt("RB:"));
+ numero3= parseFloat(prompt("RC:"));
+
+ 
+ </script>
+
+
+
+ <button onclick="Ra(numero1,numero2,numero3)">Ra</button>
+ <button onclick="Rb(numero1,numero2,numero3)">Rb</button>
+  <button onclick="Rc(numero1,numero2,numero3)">Rc</button>
+  <BR>
+precione los botones para saber los datos en delta  <BR><BR>
+UNV. HUAYHUA RODRIGUEZ VIDAL FAVIO <BR><BR>
+
+ </body>
+</html>
